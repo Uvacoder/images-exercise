@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Images Exercise</title>
+
+    <style>
+      html,
+      body {
+        font-family: "Courier New", Courier, monospace;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      header,
+      main {
+        margin: 40px auto;
+        max-width: 720px;
+        width: calc(100% - 40px);
+      }
+
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img width="128px" src="./images/Code-Optimization-256x256.png" />
+      <h1>Responsive Images Exercise</h1>
+    </header>
+
+    <main>
+      <h2>Local Image</h2>
+      <img
+        src="./images/code.jpg"
+        alt="Dark laptop showing a code editor and code"
+      />
+
+      <h2>Cloudinary Image</h2>
+      <img
+        src="https://res.cloudinary.com/siacodes/image/upload/v1636218483/keyboard_y4k7qn.jpg"
+        alt="Keyboard close up of keycaps with hot pink lighting"
+      />
+    </main>
+  </body>
+</html>
