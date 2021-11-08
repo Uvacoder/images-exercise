@@ -35,12 +35,16 @@
 
     <main>
       <h2>Local Image</h2>
-      <img
-        src="./images/code_720.jpg"
-        srcset="./images/code_720.jpg 720w, ./images/code_1420.jpg 1420w"
-        sizes="(min-width: 800px) 720px, calc(95.83vw - 28px)"
-        alt="Dark laptop showing a code editor and code"
-      />
+      <picture>
+        <source type="image/webp" srcset="./images/code_720.webp 720w, ./images/code_1420.webp 1420w"
+        sizes="(min-width: 800px) 720px, calc(95.83vw - 28px)">
+        <img
+          src="./images/code_720.jpg"
+          srcset="./images/code_720.jpg 720w, ./images/code_1420.jpg 1420w"
+          sizes="(min-width: 800px) 720px, calc(95.83vw - 28px)"
+          alt="Dark laptop showing a code editor and code"
+        />
+      </picture>
 
       <h2>Cloudinary Image</h2>
       <img
