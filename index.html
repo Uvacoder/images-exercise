@@ -29,14 +29,16 @@
   </head>
   <body>
     <header>
-      <img width="128px" src="./images/Code-Optimization-256x256.png" />
+      <img width="128px" src="./images/Code-Optimization.svg" />
       <h1>Responsive Images Exercise</h1>
     </header>
 
     <main>
       <h2>Local Image</h2>
       <img
-        src="./images/code.jpg"
+        src="./images/code_720.jpg"
+        srcset="./images/code_720.jpg 720w, ./images/code_1420.jpg 1420w"
+        sizes="(min-width: 800px) 720px, calc(95.83vw - 28px)"
         alt="Dark laptop showing a code editor and code"
       />
 
